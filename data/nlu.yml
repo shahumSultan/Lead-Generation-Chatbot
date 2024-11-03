@@ -1,0 +1,123 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: inquire_simple
+  examples: |
+    - Tell me about [loan](category) options
+    - I'm interested in [borrowing](category) money
+    - How do your [loan](category) work?
+    - Tell me about [investment](category) opportunities
+    - I'm interested in real estate [investment](category)
+    - What are your [investment](category) options?
+    - I'm interested in becoming a referral [partner](category)
+    - How can I broker [loan](category) with your company?
+    - I'm a loan officer, interested in a [partnership](category)
+
+
+- intent:
+  examples: |
+    - Can you tell me about [loan](category) terms?
+    - What are your interest rates for commercial [loan](category)?
+    - I want to apply for a [loan](category)
+    - What are the returns on [real estate](category) notes?
+    - I'm ready to invest, what's the minimum amount?
+    - I'd like details on private note [investments](category)
+    - How can I [collaborate](category) with your firm as a broker?
+    - What's required to be a referral [partner](category)?
+
+- intent: user_details
+  examples: |
+    - Sure, my details are [Shahum](name) [shahum@hotmail.com](email) [03234700711](phone_number)
+    - my name is [Maham](name) email [maham@hotmail.com](email) contact [0323470022](phone_number)
+    - definetly, my details are [Ranum](name) [ranum@hotmail.com](email) [03234700733](phone_number)
+    - details are [Atif](name) [atif@hotmail.com](email) [03234700744](phone_number)
+    - these are my contact details [Shabana](name) [shabana@hotmail.com](email) [03234700755](phone_number)

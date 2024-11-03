@@ -1,0 +1,56 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: simple inquire
+  steps:
+  - intent: inquire_simple
+    entities:
+      - category: loan
+  - action: action_capture_lead
+  - intent: user_details
+    entities:
+      - name: Shahum
+      - email: shahum@hotmail.com
+      - phone_number: 03234700711
+  - action: action_user_details
+
+- story: simple inquire
+  steps:
+  - intent: inquire_high_intent
+    entities:
+      - category: loan
+  - action: action_capture_lead
+  - intent: user_details
+    entities:
+      - name: Shahum
+      - email: shahum@hotmail.com
+      - phone_number: 03234700711
+  - action: action_user_details
